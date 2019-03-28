@@ -29,6 +29,14 @@
     margin: 0 0 5px 0;
 }
 
+.headline {
+    display: block;
+    width: 280px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .room-availability,
 .date-available {
     font-size: 0.8em;
