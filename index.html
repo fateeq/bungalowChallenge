@@ -11,10 +11,14 @@
 <body>
     <div id="app">
         <h1>Bungalows in Seattle</h1>
-        <div class="listings-cards">
-	        <card :results="results" index="0"></card>
-	        <card :results="results" index="1"></card>
-	        <card :results="results" index="2"></card>
+        <div class="listings-cards ">
+	        <card 
+	        	v-for="(item, index) in results"
+						:item="item"
+	        	:key="item.id" 
+	        	:results="results" 
+	        	:index="index">
+	        </card>
     		</div>
     </div>
     <!-- Add development version of Vue -->
