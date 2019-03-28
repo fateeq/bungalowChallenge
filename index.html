@@ -12,14 +12,15 @@
     <div id="app">
         <h1>Bungalows in Seattle</h1>
         <div id="card">
-            <img src="test.jpg">
+            <img :src="image">
             <div class="listing-details">
-                <div class="room-price">$916</div>
-                <h3 class="headline">Historic Home in Queen Anne</h3>
-                <h6 class="room-availability">1 out of 5 rooms available</h6>
-                <h6 class="date-available">Earliest availabe: 2019-03-28</h6>
+                <div class="room-price">${{ roomPrice }}</div>
+                <h3 class="headline"> {{ headline }} </h3>
+                <h6 class="room-availability">{{ roomAvailability }} of {{ totalRoomCount }} rooms available</h6>
+                <h6 class="date-available">Earliest availabe: {{ earliestAvailable }}</h6>
             </div>
         </div>
+        <div>{{test}}</div>
     </div>
     <!-- Add development version of Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
