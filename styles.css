@@ -2,11 +2,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+    text-align: center;
+}
+
+.listings-cards{
+    display: flex;
+    justify-content: center;    
+}
+
 #card {
     width: 300px;
     height: 320px;
     border: 1px solid #d3d3d3;
     border-radius: 3px;
+    margin:5px;
 }
 
 #card:hover {

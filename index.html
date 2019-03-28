@@ -11,15 +11,11 @@
 <body>
     <div id="app">
         <h1>Bungalows in Seattle</h1>
-        <div id="card">
-            <img :src="image">
-            <div class="listing-details">
-                <div class="room-price">${{ results[0].room_prices[0] }}</div>
-                <h3 class="headline"> {{ results[0].headline }} </h3>
-                <h6 class="room-availability">{{ results[0].available_room_count }} of {{ results[0].total_room_count }} rooms available</h6>
-                <h6 class="date-available">Earliest availabe: {{ results[0].earliest_available_date }}</h6>
-            </div>
-        </div>
+        <div class="listings-cards">
+	        <card :results="results"></card>
+	        <card :results="results"></card>
+	        <card :results="results"></card>
+    		</div>
     </div>
     <!-- Add development version of Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
