@@ -8,6 +8,14 @@ h1 {
     border-bottom: 1px solid #d3d3d3;
 }
 
+input {
+    text-align: center;
+    padding:15px;
+    background-color: rgb(224, 224, 224);
+    border:none;
+    margin: 0 0 5px 10px;
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;    

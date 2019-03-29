@@ -11,13 +11,18 @@
 <body>
     <div id="app">
         <h1>Bungalows in Seattle</h1>
+          <input
+						type="search"
+						placeholder="Search listings"
+						v-model="search"
+					/>
           <div class="cards-container">
 		        <card 
-		        	v-for="(item, index) in results"
+		        	v-for="(item, index) in filteredResults"
 							:item="item"
 		        	:index="index"
 		        	:key="item.id" 
-		        	:results="results" 
+		        	:results="filteredResults"
 		        >
 		        </card>
 	    		</div>
