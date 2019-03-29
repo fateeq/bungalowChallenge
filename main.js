@@ -4,8 +4,8 @@ Vue.component('card', {
 		index: ''
 	},
 	template: `
-		<div id="card">
-        <div id="image-container">
+		<div class="card">
+        <div class="image-container">
         	<img :src="results[index].images[0].sm_url"/>
         	<div class="room-price">$ {{ results[index].room_prices[0] }}</div>
         </div>

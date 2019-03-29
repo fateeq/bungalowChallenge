@@ -13,17 +13,17 @@ h1 {
     flex-wrap: wrap;    
 }
 
-#card {
+.card {
     width: 300px;
     border: 1px solid rgb(230, 230, 230);
     margin: 10px;
 }
 
-#card:hover {
+.card:hover {
     box-shadow: 2px 2px 4px 0px rgba(168,168,168,0.63);
 }
 
-#image-container {
+.image-container {
     position: relative;
 }
 
@@ -52,11 +52,6 @@ img {
     font-size: 0.95em;
     margin: 0 0 15px 0;
     padding:0;
-    /* display: block;
-    width: 280px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; */
 } 
 
 .room-availability,
