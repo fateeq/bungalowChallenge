@@ -7,7 +7,8 @@ Vue.component('card', {
 		<div class="card">
         <div class="image-container">
         	<img :src="results[index].images[0].sm_url"/>
-        	<div class="room-price">$ {{ results[index].room_prices[0] }}</div>
+        	<div class="room-price" v-if="results[index].available_room_count === 1">$ {{ results[index].room_prices[0] }}</div>
+        	<div class="room-price" v-else>$ {{ Math.min(...results[index].room_prices) }} +</div>
         </div>
         <div class="listing-details">
             <h3 class="headline"> {{ results[index].headline }} </h3>
